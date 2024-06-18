@@ -1,0 +1,1505 @@
+.ginger-btn-shockwave:after, .ginger-btn-shockwave:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0
+}
+
+@keyframes ginger-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .2)
+    }
+    100%, 30% {
+        box-shadow: 0 0 0 15px transparent
+    }
+}
+
+.ginger-btn-pulse {
+    animation: 2s infinite ginger-pulse
+}
+
+@keyframes ginger-spin {
+    0% {
+        transform: rotate(0)
+    }
+    5% {
+        transform: rotate(-20deg)
+    }
+    100%, 25% {
+        transform: rotate(360deg)
+    }
+}
+
+.ginger-btn-spin {
+    animation: 3s infinite ginger-spin
+}
+
+@keyframes ginger-zoom {
+    0% {
+        transform: scale(1);
+        opacity: 1
+    }
+    5% {
+        transform: scale(.8);
+        opacity: .75
+    }
+    20% {
+        transform: scale(1.25);
+        opacity: 1
+    }
+    100%, 30% {
+        transform: scale(1)
+    }
+}
+
+.ginger-btn-zoom {
+    animation: 2s infinite ginger-zoom
+}
+
+@keyframes ginger-bounce {
+    0%, 100%, 20% {
+        transform: translate(0, 0)
+    }
+    15%, 5% {
+        transform: translate(0, 5px)
+    }
+    10% {
+        transform: translate(0, -25px)
+    }
+}
+
+.ginger-btn-bounce {
+    animation: 3s infinite ginger-bounce
+}
+
+@keyframes ginger-fade {
+    0%, 100%, 25% {
+        opacity: 1
+    }
+    5% {
+        opacity: 0
+    }
+}
+
+.ginger-btn-fade {
+    animation: 3s infinite ginger-fade
+}
+
+@keyframes ginger-glowing {
+    0%, 100%, 30% {
+        box-shadow: 0 0 -10px #00008b
+    }
+    20% {
+        box-shadow: 0 0 20px #00008b
+    }
+}
+
+.ginger-btn-glowing {
+    animation: 3s infinite ginger-glowing
+}
+
+.ginger-btn-shockwave {
+    -webkit-animation: 1s ease-out infinite shockwavejump;
+    animation: 1s ease-out infinite shockwavejump
+}
+
+.ginger-btn-shockwave:after {
+    -webkit-animation: 1s ease-out .65s infinite shockwave;
+    animation: 1s ease-out .65s infinite shockwave
+}
+
+.ginger-btn-shockwave:before {
+    -webkit-animation: 1s ease-out .5s infinite shockwave;
+    animation: 1s ease-out .5s infinite shockwave
+}
+
+@-webkit-keyframes shockwavejump {
+    0%, 100% {
+        transform: scale(1)
+    }
+    40% {
+        transform: scale(1.08)
+    }
+    50%, 60% {
+        transform: scale(.98)
+    }
+    55% {
+        transform: scale(1.02)
+    }
+}
+
+@keyframes shockwavejump {
+    0%, 100% {
+        transform: scale(1)
+    }
+    40% {
+        transform: scale(1.08)
+    }
+    50%, 60% {
+        transform: scale(.98)
+    }
+    55% {
+        transform: scale(1.02)
+    }
+}
+
+@-webkit-keyframes shockwave {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 2px rgba(0, 0, 0, .15), inset 0 0 1px rgba(0, 0, 0, .15)
+    }
+    95% {
+        box-shadow: 0 0 50px transparent, inset 0 0 30px transparent
+    }
+    100% {
+        transform: scale(2.25)
+    }
+}
+
+@keyframes shockwave {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 2px rgba(0, 0, 0, .15), inset 0 0 1px rgba(0, 0, 0, .15)
+    }
+    95% {
+        box-shadow: 0 0 50px transparent, inset 0 0 30px transparent
+    }
+    100% {
+        transform: scale(2.25)
+    }
+}
+
+.ginger-btn-waggle {
+    animation: 2s ease-out 6s infinite forwards waggle
+}
+
+@keyframes waggle {
+    0% {
+        transform: none
+    }
+    5% {
+        transform: rotateZ(-20deg) scale(1.2)
+    }
+    10% {
+        transform: rotateZ(25deg) scale(1.2)
+    }
+    13.75% {
+        transform: rotateZ(-15deg) scale(1.2)
+    }
+    17.5% {
+        transform: rotateZ(15deg) scale(1.2)
+    }
+    21.25% {
+        transform: rotateZ(-12deg) scale(1.2)
+    }
+    22.5% {
+        transform: rotateZ(0) scale(1.2)
+    }
+    30% {
+        transform: rotateZ(0) scale(1)
+    }
+}
+
+@-webkit-keyframes waggle {
+    0% {
+        transform: none
+    }
+    5% {
+        transform: rotateZ(-20deg) scale(1.2)
+    }
+    10% {
+        transform: rotateZ(25deg) scale(1.2)
+    }
+    13.75% {
+        transform: rotateZ(-15deg) scale(1.2)
+    }
+    17.5% {
+        transform: rotateZ(15deg) scale(1.2)
+    }
+    21.25% {
+        transform: rotateZ(-12deg) scale(1.2)
+    }
+    22.5% {
+        transform: rotateZ(0) scale(1.2)
+    }
+    30% {
+        transform: rotateZ(0) scale(1)
+    }
+}
+
+.exit-intent {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    border-radius: 50%;
+    background: #000;
+    transition: .5s linear;
+    width: 0;
+    height: 0
+}
+
+.gsb-buttons .exit-intent:before {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    visibility: hidden;
+    z-index: 100;
+    transition: .75s ease-in-out;
+    -webkit-transition: .75s ease-in-out;
+    -moz-transition: .75s ease-in-out
+}
+
+.gsb-buttons .exit-intent.left-position:before {
+    clip-path: circle(0px at 0px calc(100% - 0px))
+}
+
+.gsb-buttons .exit-intent.right-position:before {
+    clip-path: circle(0px at calc(100% - 0px) calc(100% - 0px))
+}
+
+.gsb-buttons .exit-intent.active:before {
+    visibility: visible;
+    clip-path: circle(100%)
+}
+
+.gsb-social-channel.channel-instagram, .chat-button-icon.channel-instagram {
+    background: #fed975;
+    background: -moz-linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0, #fed975), color-stop(26%, #fa7e1e), color-stop(50%, #d62977), color-stop(75%, #962fbf), color-stop(100%, #4f5ad5));
+    background: -webkit-linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%);
+    background: -o-linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%);
+    background: -ms-linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%);
+    background: linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%)
+}
+
+.ginger-btn-bounce + .gsb-pending-message, .ginger-btn-fade > .gsb-pending-message, .ginger-btn-none > .gsb-pending-message, .ginger-btn-pulse > .gsb-pending-message, .ginger-btn-shockwave + .gsb-pending-message, .ginger-btn-spin > .gsb-pending-message, .ginger-btn-waggle + .gsb-pending-message, .ginger-btn-zoom + .gsb-pending-message, .gsb-buttons {
+    display: none
+}
+
+.gsb-buttons.active {
+    display: block
+}
+
+.gsb-buttons, .gsb-buttons *, .gsb-buttons :after, .gsb-buttons :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.gsb-buttons {
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    z-index: 999999
+}
+
+.gsb-buttons-content, .gsb-trigger {
+    position: relative;
+    z-index: 12111;
+}
+
+.gsb-buttons.left-side {
+    left: 25px
+}
+
+.gsb-buttons.right-side {
+    right: 25px;
+    left: auto
+}
+
+.gsb-buttons .chat-button-link {
+    padding: 10px;
+    border-radius: 50%;
+    display: block;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+    color: #fff
+}
+
+.gsb-buttons .chat-button-link.has-image {
+    padding: 0;
+    position: relative;
+}
+.gsb-buttons .chat-button-link.has-image .chat-button-icon img {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.gsb-buttons .chat-button-link svg {
+    fill: #ffffff
+}
+
+.gsb-buttons .chat-button, .gsb-buttons.single .gsb-trigger-whatsapp-popup, .gsb-buttons.single .gsb-trigger-contact, .gsb-buttons.single .gsb-trigger-wechat-popup {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    padding: 4px
+}
+
+.gsb-trigger-button {
+    display: block;
+    position: relative
+}
+
+.gsb-buttons svg {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top
+}
+
+.gsb-buttons .chat-button-icon {
+    height: 34px;
+    width: 34px;
+    display: block;
+    text-align: center;
+    border-radius: 50%
+}
+
+.gsb-buttons .chat-button-icon img, .gsb-trigger .gsb-trigger-bottom, .gsb-trigger .gsb-trigger-top {
+    height: 54px;
+    width: 54px;
+    border-radius: 50%
+}
+
+.gsb-trigger {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    padding: 4px
+}
+
+.gsb-trigger .gsb-trigger-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    z-index: 101
+}
+
+.gsb-buttons.open-form .gsb-trigger .gsb-trigger-top, .gsb-buttons.open-buttons .gsb-trigger .gsb-trigger-top, .gsb-trigger .gsb-trigger-bottom, .gsb-buttons:not(.open-form) .gsb-trigger-contact,
+.gsb-buttons.open-whatsapp-popup .gsb-trigger .gsb-trigger-top, .gsb-buttons:not(.open-whatsapp-popup) .gsb-trigger-whatsapp-popup, .gsb-buttons.open-wechat-popup .gsb-trigger .gsb-trigger-top, .gsb-buttons:not(.open-wechat-popup) .gsb-trigger-wechat-popup {
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+.gsb-trigger .gsb-trigger-bottom, .gsb-trigger .gsb-trigger-contact, .gsb-trigger .gsb-trigger-whatsapp-popup, .gsb-trigger .gsb-trigger-wechat-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .25s linear
+}
+
+.gsb-buttons .gsb-trigger .chat-button-icon, .gsb-buttons .gsb-trigger .gsb-trigger-contact, .gsb-buttons .gsb-trigger .gsb-trigger-whatsapp-popup, .gsb-buttons .gsb-trigger .gsb-trigger-wechat-popup {
+    transition: .3s linear
+}
+
+.gsb-buttons.open-buttons .gsb-trigger .gsb-trigger-bottom {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 101
+}
+
+.gsb-buttons .gsb-trigger .gsb-trigger-bottom a .chat-button-icon, .gsb-buttons:not(.open-form) .gsb-trigger-contact, .gsb-buttons:not(.open-whatsapp-popup) .gsb-trigger-whatsapp-popup, .gsb-buttons:not(.open-wechat-popup) .gsb-trigger-wechat-popup {
+    transform: scale(0.7) rotate(180deg)
+}
+
+.gsb-buttons.open-buttons .gsb-trigger .gsb-trigger-bottom a .chat-button-icon, .gsb-buttons.open-form .gsb-trigger-contact, .gsb-buttons.open-whatsapp-popup .gsb-trigger-whatsapp-popup, .gsb-buttons.open-wechat-popup .gsb-trigger-wechat-popup {
+    transform: scale(1) rotate(360deg)
+}
+
+.gsb-button-list.icon_view .chat-button {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .2s linear;
+    transform: scale(0.25) rotate(-180deg);
+    transition-delay: 0s !important
+}
+
+.gsb-button-list.list_view .chat-button {
+    position: relative;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .2s linear;
+    transition-delay: 0s !important
+}
+
+.gsb-buttons.open-buttons .gsb-button-list .chat-button {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto
+}
+
+.gsb-pending-message {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -3%;
+    right: -3%;
+    height: auto;
+    width: auto;
+    line-height: 1;
+    background: red;
+    color: #fff;
+    padding: 3px;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 11;
+    min-width: 16px;
+    min-height: 16px
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom-left::before, [data-scb][class*=cooltipz].cooltipz--bottom-right::before, [data-scb][class*=cooltipz].cooltipz--bottom::before, [data-scb][class*=cooltipz].cooltipz--left::before, [data-scb][class*=cooltipz].cooltipz--right::before, [data-scb][class*=cooltipz].cooltipz--top-left::before, [data-scb][class*=cooltipz].cooltipz--top-right::before, [data-scb][class*=cooltipz].cooltipz--top::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]::before, [data-scb][class*=cooltipz][data-tooltip-dir=left]::before, [data-scb][class*=cooltipz][data-tooltip-dir=right]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top]::before, [data-scb][data-tooltip-dir].cooltipz--bottom-left::before, [data-scb][data-tooltip-dir].cooltipz--bottom-right::before, [data-scb][data-tooltip-dir].cooltipz--bottom::before, [data-scb][data-tooltip-dir].cooltipz--left::before, [data-scb][data-tooltip-dir].cooltipz--right::before, [data-scb][data-tooltip-dir].cooltipz--top-left::before, [data-scb][data-tooltip-dir].cooltipz--top-right::before, [data-scb][data-tooltip-dir].cooltipz--top::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=left]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=right]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top]::before {
+    border: 5px solid transparent;
+    height: 0;
+    width: 0
+}
+
+[data-scb][class*=cooltipz].cooltipz--top-left::before, [data-scb][class*=cooltipz].cooltipz--top-right::before, [data-scb][class*=cooltipz].cooltipz--top::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top]::before, [data-scb][data-tooltip-dir].cooltipz--top-left::before, [data-scb][data-tooltip-dir].cooltipz--top-right::before, [data-scb][data-tooltip-dir].cooltipz--top::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top]::before {
+    border-top-color: #fff
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom-left::before, [data-scb][class*=cooltipz].cooltipz--bottom-right::before, [data-scb][class*=cooltipz].cooltipz--bottom::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]::before, [data-scb][data-tooltip-dir].cooltipz--bottom-left::before, [data-scb][data-tooltip-dir].cooltipz--bottom-right::before, [data-scb][data-tooltip-dir].cooltipz--bottom::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]::before {
+    border-bottom-color: #fff
+}
+
+[data-scb][class*=cooltipz].cooltipz--right::before, [data-scb][class*=cooltipz][data-tooltip-dir=right]::before, [data-scb][data-tooltip-dir].cooltipz--right::before, [data-scb][data-tooltip-dir][data-tooltip-dir=right]::before {
+    border-right-color: #fff
+}
+
+[data-scb][class*=cooltipz].cooltipz--left::before, [data-scb][class*=cooltipz][data-tooltip-dir=left]::before, [data-scb][data-tooltip-dir].cooltipz--left::before, [data-scb][data-tooltip-dir][data-tooltip-dir=left]::before {
+    border-left-color: #fff
+}
+
+[data-scb][class*=cooltipz].cooltipz--fit::after, [data-scb][class*=cooltipz].cooltipz--large::after, [data-scb][class*=cooltipz].cooltipz--medium::after, [data-scb][class*=cooltipz].cooltipz--small::after, [data-scb][class*=cooltipz][data-cooltipz-size=fit]::after, [data-scb][class*=cooltipz][data-cooltipz-size=large]::after, [data-scb][class*=cooltipz][data-cooltipz-size=medium]::after, [data-scb][class*=cooltipz][data-cooltipz-size=small]::after, [data-scb][data-tooltip-dir].cooltipz--fit::after, [data-scb][data-tooltip-dir].cooltipz--large::after, [data-scb][data-tooltip-dir].cooltipz--medium::after, [data-scb][data-tooltip-dir].cooltipz--small::after, [data-scb][data-tooltip-dir][data-cooltipz-size=fit]::after, [data-scb][data-tooltip-dir][data-cooltipz-size=large]::after, [data-scb][data-tooltip-dir][data-cooltipz-size=medium]::after, [data-scb][data-tooltip-dir][data-cooltipz-size=small]::after {
+    white-space: normal;
+    word-wrap: break-word
+}
+
+[data-scb][class*=cooltipz], [data-scb][data-tooltip-dir] {
+    cursor: var(--cooltipz-cursor, pointer);
+    position: relative
+}
+
+[data-scb][class*=cooltipz]::after, [data-scb][data-tooltip-dir]::after {
+    background-color: #fff;
+    border-radius: 4px;
+    border: var(--cooltipz-border-width, 0) var(--cooltipz-border-style, solid) var(--cooltipz-border-color, #1f1f1f);
+    -webkit-box-shadow: 0 1.9px 7.8px rgba(0, 0, 0, .3);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    color: #333;
+    content: attr(data-scb);
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-indent: 0;
+    text-shadow: none;
+    white-space: pre;
+    z-index: 10;
+    max-width: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center
+}
+
+.gsb-buttons.single [data-scb][class*=cooltipz]:hover::after,.gsb-buttons.single [data-scb][data-tooltip-dir]:hover::after {
+    content: attr(data-hover-scb);
+}
+.gsb-buttons.single [data-scb][class*=cooltipz]:hover::before,.gsb-buttons.single  [data-scb][data-tooltip-dir]:hover::before {
+    content: "";
+}
+
+[data-scb][class*=cooltipz]::before, [data-scb][data-tooltip-dir]::before {
+    content: "";
+    z-index: 11
+}
+
+[data-scb=""][class*=cooltipz]::after, [data-scb=""][data-tooltip-dir]::after , [data-scb=""][class*=cooltipz]::before, [data-scb=""][data-tooltip-dir]::before {
+    content: none;
+}
+
+[data-scb][class*=cooltipz]::after, [data-scb][class*=cooltipz]::before, [data-scb][data-tooltip-dir]::after, [data-scb][data-tooltip-dir]::before {
+    -webkit-transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
+    transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 0%;
+    pointer-events: none;
+    position: absolute;
+    -webkit-transition-delay: var(--cooltipz-delay-hide, 0s);
+    transition-delay: var(--cooltipz-delay-hide, 0s)
+}
+
+.has-no-tooltip-animation [data-scb][data-tooltip-dir]::after, .has-no-tooltip-animation [data-scb][data-tooltip-dir]::before, .has-no-tooltip-animation [data-scb][class*=cooltipz]::after, .has-no-tooltip-animation [data-scb][class*=cooltipz]::before {
+    transition: none
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-scb][class*=cooltipz]::after, [data-scb][class*=cooltipz]::before, [data-scb][data-tooltip-dir]::after, [data-scb][data-tooltip-dir]::before {
+        -webkit-transition: none;
+        transition: none
+    }
+}
+
+[data-scb][class*=cooltipz].cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--visible::before, [data-scb][class*=cooltipz]:focus::after, [data-scb][class*=cooltipz]:focus::before, [data-scb][class*=cooltipz]:hover::after, [data-scb][class*=cooltipz]:hover::before, [data-scb][class*=cooltipz][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--visible::before, [data-scb][data-tooltip-dir]:hover::after, [data-scb][data-tooltip-dir]:hover::before, [data-scb][data-tooltip-dir][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-cooltipz-visible]::before {
+    opacity: 100%;
+    -webkit-transition-delay: var(--cooltipz-delay-show, 0s);
+    transition-delay: var(--cooltipz-delay-show, 0s)
+}
+
+[data-scb][class*=cooltipz].cooltipz--top::after, [data-scb][class*=cooltipz][data-tooltip-dir=top]::after, [data-scb][data-tooltip-dir].cooltipz--top::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top]::after {
+    margin-bottom: calc(5px * 2)
+}
+
+[data-scb][class*=cooltipz].cooltipz--top::after, [data-scb][class*=cooltipz].cooltipz--top::before, [data-scb][class*=cooltipz][data-tooltip-dir=top]::after, [data-scb][class*=cooltipz][data-tooltip-dir=top]::before, [data-scb][data-tooltip-dir].cooltipz--top::after, [data-scb][data-tooltip-dir].cooltipz--top::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top]::before {
+    bottom: calc(100% - 5px / 2);
+    left: 50%;
+    -webkit-transform: translate(-50%, var(--cooltipz-slide, 6px));
+    transform: translate(-50%, var(--cooltipz-slide, 6px));
+    -webkit-transform-origin: top;
+    transform-origin: top
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom.cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--bottom.cooltipz--visible::before, [data-scb][class*=cooltipz].cooltipz--bottom:focus::after, [data-scb][class*=cooltipz].cooltipz--bottom:focus::before, [data-scb][class*=cooltipz].cooltipz--bottom:hover::after, [data-scb][class*=cooltipz].cooltipz--bottom:hover::before, [data-scb][class*=cooltipz].cooltipz--bottom[data-cooltipz-visible]::after, [data-scb][class*=cooltipz].cooltipz--bottom[data-cooltipz-visible]::before, [data-scb][class*=cooltipz].cooltipz--top.cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--top.cooltipz--visible::before, [data-scb][class*=cooltipz].cooltipz--top:focus::after, [data-scb][class*=cooltipz].cooltipz--top:focus::before, [data-scb][class*=cooltipz].cooltipz--top:hover::after, [data-scb][class*=cooltipz].cooltipz--top:hover::before, [data-scb][class*=cooltipz].cooltipz--top[data-cooltipz-visible]::after, [data-scb][class*=cooltipz].cooltipz--top[data-cooltipz-visible]::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom].cooltipz--visible::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom].cooltipz--visible::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]:focus::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]:focus::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]:hover::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]:hover::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom][data-cooltipz-visible]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top].cooltipz--visible::after, [data-scb][class*=cooltipz][data-tooltip-dir=top].cooltipz--visible::before, [data-scb][class*=cooltipz][data-tooltip-dir=top]:focus::after, [data-scb][class*=cooltipz][data-tooltip-dir=top]:focus::before, [data-scb][class*=cooltipz][data-tooltip-dir=top]:hover::after, [data-scb][class*=cooltipz][data-tooltip-dir=top]:hover::before, [data-scb][class*=cooltipz][data-tooltip-dir=top][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-tooltip-dir=top][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--bottom.cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--bottom.cooltipz--visible::before, [data-scb][data-tooltip-dir].cooltipz--bottom:focus::after, [data-scb][data-tooltip-dir].cooltipz--bottom:focus::before, [data-scb][data-tooltip-dir].cooltipz--bottom:hover::after, [data-scb][data-tooltip-dir].cooltipz--bottom:hover::before, [data-scb][data-tooltip-dir].cooltipz--bottom[data-cooltipz-visible]::after, [data-scb][data-tooltip-dir].cooltipz--bottom[data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--top.cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--top.cooltipz--visible::before, [data-scb][data-tooltip-dir].cooltipz--top:focus::after, [data-scb][data-tooltip-dir].cooltipz--top:focus::before, [data-scb][data-tooltip-dir].cooltipz--top:hover::after, [data-scb][data-tooltip-dir].cooltipz--top:hover::before, [data-scb][data-tooltip-dir].cooltipz--top[data-cooltipz-visible]::after, [data-scb][data-tooltip-dir].cooltipz--top[data-cooltipz-visible]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom].cooltipz--visible::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom].cooltipz--visible::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]:focus::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]:focus::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]:hover::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]:hover::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top].cooltipz--visible::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top].cooltipz--visible::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top]:focus::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top]:focus::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top]:hover::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top]:hover::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top][data-cooltipz-visible]::before {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0)
+}
+
+[data-scb][class*=cooltipz].cooltipz--top-left::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]::after, [data-scb][data-tooltip-dir].cooltipz--top-left::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]::after {
+    left: 0;
+    margin-bottom: calc(5px * 2)
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom-left::before, [data-scb][class*=cooltipz].cooltipz--top-left::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]::before, [data-scb][data-tooltip-dir].cooltipz--bottom-left::before, [data-scb][data-tooltip-dir].cooltipz--top-left::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]::before {
+    left: calc(5px / 2)
+}
+
+[data-scb][class*=cooltipz].cooltipz--top-left::after, [data-scb][class*=cooltipz].cooltipz--top-left::before, [data-scb][class*=cooltipz].cooltipz--top-right::after, [data-scb][class*=cooltipz].cooltipz--top-right::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]::before, [data-scb][data-tooltip-dir].cooltipz--top-left::after, [data-scb][data-tooltip-dir].cooltipz--top-left::before, [data-scb][data-tooltip-dir].cooltipz--top-right::after, [data-scb][data-tooltip-dir].cooltipz--top-right::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]::before {
+    bottom: calc(100% - 5px / 2);
+    -webkit-transform: translate(0, var(--cooltipz-slide, 6px));
+    transform: translate(0, var(--cooltipz-slide, 6px));
+    -webkit-transform-origin: top;
+    transform-origin: top
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom-left.cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--bottom-left.cooltipz--visible::before, [data-scb][class*=cooltipz].cooltipz--bottom-left:focus::after, [data-scb][class*=cooltipz].cooltipz--bottom-left:focus::before, [data-scb][class*=cooltipz].cooltipz--bottom-left:hover::after, [data-scb][class*=cooltipz].cooltipz--bottom-left:hover::before, [data-scb][class*=cooltipz].cooltipz--bottom-left[data-cooltipz-visible]::after, [data-scb][class*=cooltipz].cooltipz--bottom-left[data-cooltipz-visible]::before, [data-scb][class*=cooltipz].cooltipz--bottom-right.cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--bottom-right.cooltipz--visible::before, [data-scb][class*=cooltipz].cooltipz--bottom-right:focus::after, [data-scb][class*=cooltipz].cooltipz--bottom-right:focus::before, [data-scb][class*=cooltipz].cooltipz--bottom-right:hover::after, [data-scb][class*=cooltipz].cooltipz--bottom-right:hover::before, [data-scb][class*=cooltipz].cooltipz--bottom-right[data-cooltipz-visible]::after, [data-scb][class*=cooltipz].cooltipz--bottom-right[data-cooltipz-visible]::before, [data-scb][class*=cooltipz].cooltipz--top-left.cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--top-left.cooltipz--visible::before, [data-scb][class*=cooltipz].cooltipz--top-left:focus::after, [data-scb][class*=cooltipz].cooltipz--top-left:focus::before, [data-scb][class*=cooltipz].cooltipz--top-left:hover::after, [data-scb][class*=cooltipz].cooltipz--top-left:hover::before, [data-scb][class*=cooltipz].cooltipz--top-left[data-cooltipz-visible]::after, [data-scb][class*=cooltipz].cooltipz--top-left[data-cooltipz-visible]::before, [data-scb][class*=cooltipz].cooltipz--top-right.cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--top-right.cooltipz--visible::before, [data-scb][class*=cooltipz].cooltipz--top-right:focus::after, [data-scb][class*=cooltipz].cooltipz--top-right:focus::before, [data-scb][class*=cooltipz].cooltipz--top-right:hover::after, [data-scb][class*=cooltipz].cooltipz--top-right:hover::before, [data-scb][class*=cooltipz].cooltipz--top-right[data-cooltipz-visible]::after, [data-scb][class*=cooltipz].cooltipz--top-right[data-cooltipz-visible]::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left].cooltipz--visible::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left].cooltipz--visible::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]:focus::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]:focus::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]:hover::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]:hover::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left][data-cooltipz-visible]::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right].cooltipz--visible::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right].cooltipz--visible::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]:focus::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]:focus::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]:hover::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]:hover::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right][data-cooltipz-visible]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-left].cooltipz--visible::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-left].cooltipz--visible::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]:focus::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]:focus::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]:hover::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-left]:hover::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-left][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-left][data-cooltipz-visible]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-right].cooltipz--visible::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-right].cooltipz--visible::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]:focus::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]:focus::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]:hover::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]:hover::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-right][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-right][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--bottom-left.cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--bottom-left.cooltipz--visible::before, [data-scb][data-tooltip-dir].cooltipz--bottom-left:focus::after, [data-scb][data-tooltip-dir].cooltipz--bottom-left:focus::before, [data-scb][data-tooltip-dir].cooltipz--bottom-left:hover::after, [data-scb][data-tooltip-dir].cooltipz--bottom-left:hover::before, [data-scb][data-tooltip-dir].cooltipz--bottom-left[data-cooltipz-visible]::after, [data-scb][data-tooltip-dir].cooltipz--bottom-left[data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--bottom-right.cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--bottom-right.cooltipz--visible::before, [data-scb][data-tooltip-dir].cooltipz--bottom-right:focus::after, [data-scb][data-tooltip-dir].cooltipz--bottom-right:focus::before, [data-scb][data-tooltip-dir].cooltipz--bottom-right:hover::after, [data-scb][data-tooltip-dir].cooltipz--bottom-right:hover::before, [data-scb][data-tooltip-dir].cooltipz--bottom-right[data-cooltipz-visible]::after, [data-scb][data-tooltip-dir].cooltipz--bottom-right[data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--top-left.cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--top-left.cooltipz--visible::before, [data-scb][data-tooltip-dir].cooltipz--top-left:focus::after, [data-scb][data-tooltip-dir].cooltipz--top-left:focus::before, [data-scb][data-tooltip-dir].cooltipz--top-left:hover::after, [data-scb][data-tooltip-dir].cooltipz--top-left:hover::before, [data-scb][data-tooltip-dir].cooltipz--top-left[data-cooltipz-visible]::after, [data-scb][data-tooltip-dir].cooltipz--top-left[data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--top-right.cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--top-right.cooltipz--visible::before, [data-scb][data-tooltip-dir].cooltipz--top-right:focus::after, [data-scb][data-tooltip-dir].cooltipz--top-right:focus::before, [data-scb][data-tooltip-dir].cooltipz--top-right:hover::after, [data-scb][data-tooltip-dir].cooltipz--top-right:hover::before, [data-scb][data-tooltip-dir].cooltipz--top-right[data-cooltipz-visible]::after, [data-scb][data-tooltip-dir].cooltipz--top-right[data-cooltipz-visible]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left].cooltipz--visible::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left].cooltipz--visible::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]:focus::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]:focus::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]:hover::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]:hover::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right].cooltipz--visible::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right].cooltipz--visible::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]:focus::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]:focus::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]:hover::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]:hover::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left].cooltipz--visible::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left].cooltipz--visible::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]:focus::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]:focus::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]:hover::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left]:hover::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-left][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right].cooltipz--visible::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right].cooltipz--visible::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]:focus::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]:focus::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]:hover::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]:hover::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right][data-cooltipz-visible]::before {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+}
+
+[data-scb][class*=cooltipz].cooltipz--top-right::after, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]::after, [data-scb][data-tooltip-dir].cooltipz--top-right::after, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]::after {
+    margin-bottom: calc(5px * 2);
+    right: 0
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom-right::before, [data-scb][class*=cooltipz].cooltipz--top-right::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]::before, [data-scb][class*=cooltipz][data-tooltip-dir=top-right]::before, [data-scb][data-tooltip-dir].cooltipz--bottom-right::before, [data-scb][data-tooltip-dir].cooltipz--top-right::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=top-right]::before {
+    right: calc(5px / 2)
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]::after, [data-scb][data-tooltip-dir].cooltipz--bottom::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]::after {
+    margin-top: calc(5px * 2)
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom::after, [data-scb][class*=cooltipz].cooltipz--bottom::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom]::before, [data-scb][data-tooltip-dir].cooltipz--bottom::after, [data-scb][data-tooltip-dir].cooltipz--bottom::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom]::before {
+    left: 50%;
+    top: calc(100% - 5px / 2);
+    -webkit-transform: translate(-50%, calc(var(--cooltipz-slide, 6px) * -1));
+    transform: translate(-50%, calc(var(--cooltipz-slide, 6px) * -1));
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom-left::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]::after, [data-scb][data-tooltip-dir].cooltipz--bottom-left::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]::after {
+    left: 0;
+    margin-top: calc(5px * 2)
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom-left::after, [data-scb][class*=cooltipz].cooltipz--bottom-left::before, [data-scb][class*=cooltipz].cooltipz--bottom-right::after, [data-scb][class*=cooltipz].cooltipz--bottom-right::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-left]::before, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]::before, [data-scb][data-tooltip-dir].cooltipz--bottom-left::after, [data-scb][data-tooltip-dir].cooltipz--bottom-left::before, [data-scb][data-tooltip-dir].cooltipz--bottom-right::after, [data-scb][data-tooltip-dir].cooltipz--bottom-right::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-left]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]::before {
+    top: calc(100% - 5px / 2);
+    -webkit-transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
+    transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom
+}
+
+[data-scb][class*=cooltipz].cooltipz--bottom-right::after, [data-scb][class*=cooltipz][data-tooltip-dir=bottom-right]::after, [data-scb][data-tooltip-dir].cooltipz--bottom-right::after, [data-scb][data-tooltip-dir][data-tooltip-dir=bottom-right]::after {
+    margin-top: calc(5px * 2);
+    right: 0
+}
+
+[data-scb][class*=cooltipz].cooltipz--left::after, [data-scb][class*=cooltipz][data-tooltip-dir=left]::after, [data-scb][data-tooltip-dir].cooltipz--left::after, [data-scb][data-tooltip-dir][data-tooltip-dir=left]::after {
+    margin-right: calc(5px * 2)
+}
+
+[data-scb][class*=cooltipz].cooltipz--left::after, [data-scb][class*=cooltipz].cooltipz--left::before, [data-scb][class*=cooltipz][data-tooltip-dir=left]::after, [data-scb][class*=cooltipz][data-tooltip-dir=left]::before, [data-scb][data-tooltip-dir].cooltipz--left::after, [data-scb][data-tooltip-dir].cooltipz--left::before, [data-scb][data-tooltip-dir][data-tooltip-dir=left]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=left]::before {
+    right: calc(100% + 14px / 2);
+    top: 50%;
+    -webkit-transform: translate(var(--cooltipz-slide, 6px), -50%);
+    transform: translate(var(--cooltipz-slide, 6px), -50%);
+    -webkit-transform-origin: left;
+    transform-origin: left
+}
+
+[data-scb][class*=cooltipz].cooltipz--left.cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--left.cooltipz--visible::before, [data-scb][class*=cooltipz].cooltipz--left:focus::after, [data-scb][class*=cooltipz].cooltipz--left:focus::before, [data-scb][class*=cooltipz].cooltipz--left:hover::after, [data-scb][class*=cooltipz].cooltipz--left:hover::before, [data-scb][class*=cooltipz].cooltipz--left[data-cooltipz-visible]::after, [data-scb][class*=cooltipz].cooltipz--left[data-cooltipz-visible]::before, [data-scb][class*=cooltipz].cooltipz--right.cooltipz--visible::after, [data-scb][class*=cooltipz].cooltipz--right.cooltipz--visible::before, [data-scb][class*=cooltipz].cooltipz--right:focus::after, [data-scb][class*=cooltipz].cooltipz--right:focus::before, [data-scb][class*=cooltipz].cooltipz--right:hover::after, [data-scb][class*=cooltipz].cooltipz--right:hover::before, [data-scb][class*=cooltipz].cooltipz--right[data-cooltipz-visible]::after, [data-scb][class*=cooltipz].cooltipz--right[data-cooltipz-visible]::before, [data-scb][class*=cooltipz][data-tooltip-dir=left].cooltipz--visible::after, [data-scb][class*=cooltipz][data-tooltip-dir=left].cooltipz--visible::before, [data-scb][class*=cooltipz][data-tooltip-dir=left]:focus::after, [data-scb][class*=cooltipz][data-tooltip-dir=left]:focus::before, [data-scb][class*=cooltipz][data-tooltip-dir=left]:hover::after, [data-scb][class*=cooltipz][data-tooltip-dir=left]:hover::before, [data-scb][class*=cooltipz][data-tooltip-dir=left][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-tooltip-dir=left][data-cooltipz-visible]::before, [data-scb][class*=cooltipz][data-tooltip-dir=right].cooltipz--visible::after, [data-scb][class*=cooltipz][data-tooltip-dir=right].cooltipz--visible::before, [data-scb][class*=cooltipz][data-tooltip-dir=right]:focus::after, [data-scb][class*=cooltipz][data-tooltip-dir=right]:focus::before, [data-scb][class*=cooltipz][data-tooltip-dir=right]:hover::after, [data-scb][class*=cooltipz][data-tooltip-dir=right]:hover::before, [data-scb][class*=cooltipz][data-tooltip-dir=right][data-cooltipz-visible]::after, [data-scb][class*=cooltipz][data-tooltip-dir=right][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--left.cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--left.cooltipz--visible::before, [data-scb][data-tooltip-dir].cooltipz--left:focus::after, [data-scb][data-tooltip-dir].cooltipz--left:focus::before, [data-scb][data-tooltip-dir].cooltipz--left:hover::after, [data-scb][data-tooltip-dir].cooltipz--left:hover::before, [data-scb][data-tooltip-dir].cooltipz--left[data-cooltipz-visible]::after, [data-scb][data-tooltip-dir].cooltipz--left[data-cooltipz-visible]::before, [data-scb][data-tooltip-dir].cooltipz--right.cooltipz--visible::after, [data-scb][data-tooltip-dir].cooltipz--right.cooltipz--visible::before, [data-scb][data-tooltip-dir].cooltipz--right:focus::after, [data-scb][data-tooltip-dir].cooltipz--right:focus::before, [data-scb][data-tooltip-dir].cooltipz--right:hover::after, [data-scb][data-tooltip-dir].cooltipz--right:hover::before, [data-scb][data-tooltip-dir].cooltipz--right[data-cooltipz-visible]::after, [data-scb][data-tooltip-dir].cooltipz--right[data-cooltipz-visible]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=left].cooltipz--visible::after, [data-scb][data-tooltip-dir][data-tooltip-dir=left].cooltipz--visible::before, [data-scb][data-tooltip-dir][data-tooltip-dir=left]:focus::after, [data-scb][data-tooltip-dir][data-tooltip-dir=left]:focus::before, [data-scb][data-tooltip-dir][data-tooltip-dir=left]:hover::after, [data-scb][data-tooltip-dir][data-tooltip-dir=left]:hover::before, [data-scb][data-tooltip-dir][data-tooltip-dir=left][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=left][data-cooltipz-visible]::before, [data-scb][data-tooltip-dir][data-tooltip-dir=right].cooltipz--visible::after, [data-scb][data-tooltip-dir][data-tooltip-dir=right].cooltipz--visible::before, [data-scb][data-tooltip-dir][data-tooltip-dir=right]:focus::after, [data-scb][data-tooltip-dir][data-tooltip-dir=right]:focus::before, [data-scb][data-tooltip-dir][data-tooltip-dir=right]:hover::after, [data-scb][data-tooltip-dir][data-tooltip-dir=right]:hover::before, [data-scb][data-tooltip-dir][data-tooltip-dir=right][data-cooltipz-visible]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=right][data-cooltipz-visible]::before {
+}
+
+[data-scb][class*=cooltipz].cooltipz--right::after, [data-scb][class*=cooltipz][data-tooltip-dir=right]::after, [data-scb][data-tooltip-dir].cooltipz--right::after, [data-scb][data-tooltip-dir][data-tooltip-dir=right]::after {
+    margin-left: calc(5px * 2)
+}
+
+[data-scb][class*=cooltipz].cooltipz--right::after, [data-scb][class*=cooltipz].cooltipz--right::before, [data-scb][class*=cooltipz][data-tooltip-dir=right]::after, [data-scb][class*=cooltipz][data-tooltip-dir=right]::before, [data-scb][data-tooltip-dir].cooltipz--right::after, [data-scb][data-tooltip-dir].cooltipz--right::before, [data-scb][data-tooltip-dir][data-tooltip-dir=right]::after, [data-scb][data-tooltip-dir][data-tooltip-dir=right]::before {
+    left: calc(100% + 14px / 2);
+    top: 50%;
+    -webkit-transform: translate(calc(var(--cooltipz-slide, 6px) * -1), -50%);
+    transform: translate(calc(var(--cooltipz-slide, 6px) * -1), -50%);
+    -webkit-transform-origin: right;
+    transform-origin: right
+}
+
+[data-scb][class*=cooltipz].cooltipz--fit::after, [data-scb][class*=cooltipz][data-cooltipz-size=fit]::after, [data-scb][data-tooltip-dir].cooltipz--fit::after, [data-scb][data-tooltip-dir][data-cooltipz-size=fit]::after {
+    width: 100%
+}
+
+[data-scb][class*=cooltipz].cooltipz--small::after, [data-scb][class*=cooltipz][data-cooltipz-size=small]::after, [data-scb][data-tooltip-dir].cooltipz--small::after, [data-scb][data-tooltip-dir][data-cooltipz-size=small]::after {
+    width: var(--cooltipz-small, 6.25rem)
+}
+
+[data-scb][class*=cooltipz].cooltipz--medium::after, [data-scb][class*=cooltipz][data-cooltipz-size=medium]::after, [data-scb][data-tooltip-dir].cooltipz--medium::after, [data-scb][data-tooltip-dir][data-cooltipz-size=medium]::after {
+    width: var(--cooltipz-medium, 12.5rem)
+}
+
+[data-scb][class*=cooltipz].cooltipz--large::after, [data-scb][class*=cooltipz][data-cooltipz-size=large]::after, [data-scb][data-tooltip-dir].cooltipz--large::after, [data-scb][data-tooltip-dir][data-cooltipz-size=large]::after {
+    width: var(--cooltipz-large, 18.75rem)
+}
+
+[data-scb][class*=cooltipz].cooltipz--static::after, [data-scb][class*=cooltipz].cooltipz--static::before, [data-scb][class*=cooltipz][data-cooltipz-static]::after, [data-scb][class*=cooltipz][data-cooltipz-static]::before, [data-scb][data-tooltip-dir].cooltipz--static::after, [data-scb][data-tooltip-dir].cooltipz--static::before, [data-scb][data-tooltip-dir][data-cooltipz-static]::after, [data-scb][data-tooltip-dir][data-cooltipz-static]::before {
+    -webkit-transition: none;
+    transition: none
+}
+
+.gsb-buttons.has-no-close-button:not(.single) .gsb-trigger {
+    display: none !important
+}
+
+.gsb-buttons.has-shadow .gsb-button-list .chat-button a, .gsb-buttons.has-shadow .gsb-trigger-button .chat-button a, .gsb-buttons.has-shadow .gsb-trigger-button a {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, .2);
+}
+
+.gsb-buttons.has-shadow .gsb-button-list .chat-button a:hover, .gsb-buttons.has-shadow .gsb-trigger-button .chat-button a:hover, .gsb-buttons.has-shadow .gsb-trigger-button a:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, .3);
+}
+
+.gsb-buttons .sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    border: 0 !important
+}
+
+.has-no-animation .chat-button {
+    transition: none !important
+}
+
+.scw-contact-form {
+    position: absolute;
+    width: 320px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    animation-delay: -2s;
+    -webkit-animation-delay: -2s
+}
+
+.gsb-buttons.right-side .scw-contact-form, .gsb-buttons.right-side .whatsapp-popup, .gsb-buttons.right-side .wechat-popup {
+    right: 0
+}
+
+.gsb-buttons.left-side .scw-contact-form, .gsb-buttons.left-side .whatsapp-popup, .gsb-buttons.left-side .wechat-popup {
+    left: 0
+}
+
+.gsb-buttons:not(.open-form) .scw-contact-form, .gsb-buttons:not(.open-whatsapp-popup) .whatsapp-popup, .gsb-buttons:not(.open-wechat-popup) .wechat-popup {
+    visibility: hidden;
+    opacity: 0;
+    bottom: 0
+}
+
+.gsb-buttons.open-form .scw-contact-form, .gsb-buttons.open-whatsapp-popup .whatsapp-popup, .gsb-buttons.open-wechat-popup .wechat-popup {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-5px)
+}
+
+.scw-form-container {
+    position: relative;
+    border-radius: 6px;
+    -moz-transition: .5s linear;
+    box-shadow: rgba(0, 0, 0, .16) 0 5px 40px;
+    -webkit-box-shadow: rgba(0, 0, 0, .16) 0 5px 40px;
+    -moz-box-shadow: rgba(0, 0, 0, .16) 0 5px 40px;
+    background: #fff
+}
+
+.scw-form-close {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    display: inline-block;
+    cursor: pointer
+}
+
+.scw-form-close span {
+    display: block;
+    margin: 5px 0
+}
+
+.scw-form-title {
+    padding: 10px 25px 10px 15px;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #acacac;
+    line-height: 1.2;
+}
+
+.scw-form-body {
+    max-height: calc(100vh - 230px);
+    overflow-y: auto;
+    padding: 15px 15px 0
+}
+
+.scw-form-field + .scw-form-field {
+    margin-top: 12px
+}
+
+.scw-form-field label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 3px;
+    line-height: 14px
+}
+
+.scw-form-field label span {
+    color: red
+}
+
+.scw-form-field input {
+    border: solid 1px #d7d7d7 !important;
+    border-radius: 4px !important;
+    height: 32px !important;
+    line-height: 32px !important;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    color: #1c2733 !important;
+    padding: 0 10px !important;
+    outline: none !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+    background-color: #ffffff !important
+}
+
+.scw-form-field textarea {
+    border: solid 1px #d7d7d7 !important;
+    border-radius: 4px !important;
+    height: 60px;
+    line-height: 19px !important;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    color: #1c2733 !important;
+    padding: 5px 10px !important;
+    outline: none !important;
+    max-width: 100%;
+    font-size: 14px !important;
+    margin-top: 5px;
+    background-color: #ffffff !important
+}
+
+.error-msg, .error-msg-valid {
+    font-size: 12px;
+    display: block;
+    color: red
+}
+
+textarea + .error-msg {
+    margin-top: -7px
+}
+
+.scw-form-field:not(.has-error) .error-msg, .scw-form-field:not(.has-error-valid) .error-msg-valid {
+    display: none
+}
+
+.scw-form-field.has-error input, .scw-form-field.has-error textarea, .scw-form-field.has-error-valid input {
+    border-color: red !important
+}
+
+.scw-form-btn {
+    padding: 15px
+}
+
+.scw-form-btn button {
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #736bc4;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    padding: 0 !important;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    outline: none !important;
+}
+
+.open-form .scb-tooltip:before, .open-form .scb-tooltip:after, .open-whatsapp-popup .scb-tooltip:before, .open-whatsapp-popup .scb-tooltip:after, .open-wechat-popup .scb-tooltip:before, .open-wechat-popup .scb-tooltip:after {
+    display: none
+}
+
+.scw-form-success.success-open-msg {
+    color: #4caf50;
+    padding: 0px 10px 15px;
+    font-size: 16px;
+    border-radius: 0 0 6px 6px
+}
+
+.scw-contact-form:not(.success-msg) .scw-form-success.success-open-msg {
+    display: none
+}
+.view-list .list_view {
+    transition: transform .2s linear, opacity .2s linear, visibility .2s linear;
+    transition-delay: 0s !important;
+    -webkit-transform: translateY(50px) scale(1);
+    transform: translateY(50px) scale(1);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 300px;
+    max-width: 100%;
+    pointer-events: none;
+    z-index: 0;
+    position: absolute;
+    overflow: visible;
+    right: 0;
+    bottom: 0;
+    min-width: 300px;
+}
+.left-side.view-list .list_view {
+    left: 0;
+    right: auto;
+}
+.open-buttons .list_view {
+    z-index: 101;
+    pointer-events: auto;
+}
+
+.view-list .list_view .channel-list .list-channel-container:last-child a {
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+
+.gsb-buttons.view-list.right-side .gsb-trigger, .gsb-buttons.view-grid.right-side .gsb-trigger {
+    margin-left: auto
+}
+
+.gsb-buttons.view-list.left-side .gsb-trigger, .gsb-buttons.view-grid.left-side .gsb-trigger {
+    margin-right: auto
+}
+
+.list-channel .chat-button-link:before, .list-channel .chat-button-link:after {
+    content: none
+}
+
+.list-channel .gsb-social-channel {
+    display: flex;
+    border-radius: 0;
+    align-items: center;
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    box-shadow: none !important;
+    padding: 10px 15px
+}
+
+.list-channel .gsb-social-channel:hover {
+    background-color: #f9f9f9;
+}
+
+.list-channel .chat-button-icon {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    flex: 0 0 40px
+}
+
+.list-channel .list-channel-title {
+    color: #000;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.view-list .list_view .channel-list-container {
+    overflow-y: auto
+}
+
+.view-list .list_view .channel-list .list-channel-container + .list-channel-container {
+    border-top: 1px solid #EEE
+}
+
+.chat-button.list-channel {
+    height: auto;
+    width: auto;
+    padding: 0
+}
+
+.list_title_container {
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 30px 10px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.list_title_container .list_title {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.open-form .list_view, .open-form .grid_view, .open-whatsapp-popup .list_view, .open-whatsapp-popup .grid_view, .open-wechat-popup .list_view, .open-wechat-popup .grid_view {
+    display: none
+}
+
+.success-msg.has-error .success-open-msg {
+    color: red
+}
+
+.view-grid .grid_view {
+    transition: transform .2s linear, opacity .2s linear, visibility .2s linear;
+    transition-delay: 0s !important;
+    -webkit-transform: translateY(50px) scale(1);
+    transform: translateY(50px) scale(1);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 300px;
+    max-width: 100%;
+    pointer-events: none;
+    z-index: 0;
+    position: absolute;
+    overflow: visible;
+    right: 0;
+    bottom: 0;
+    min-width: 300px;
+}
+
+.left-side.view-grid .grid_view {
+    left: 0;
+    right: auto;
+}
+
+.open-buttons .grid_view {
+    z-index: 101;
+    pointer-events: auto;
+}
+
+
+.view-grid .grid_view .channel-grid .channel-grid-container {
+    display: flex;
+    padding: 0 10px 10px;
+    flex-wrap: wrap
+}
+
+.view-grid .channel-grid .chat-button {
+    width: auto;
+    height: auto;
+    line-height: 1;
+    padding: 6px !important
+}
+
+.view-grid .channel-grid .chat-button a {
+    width: 44px !important;
+    height: 44px !important
+}
+
+.view-grid .channel-grid .chat-button span.chat-button-icon {
+    height: 24px !important;
+    width: 24px !important
+}
+
+.grid-title-container {
+    padding: 10px 15px 10px;
+    font-size: 16px;
+    line-height: 1.2
+}
+
+.grid-title-container .grid-title p {
+    overflow-wrap: break-word;
+}
+
+.grid-desc-container {
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 20px
+}
+
+.close-view-btn {
+    display: inline-block;
+    line-height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.close-view-btnsvg {
+    height: 20px;
+    width: 20px
+}
+
+.channel-instagram.default-insta-hover:hover {
+    background: #fed975 !important;
+    background: -moz-linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%) !important;
+    background: -webkit-gradient(left bottom, right top, color-stop(0, #fed975), color-stop(26%, #fa7e1e), color-stop(50%, #d62977), color-stop(75%, #962fbf), color-stop(100%, #4f5ad5)) !important;
+    background: -webkit-linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%) !important;
+    background: -o-linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%) !important;
+    background: -ms-linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%) !important;
+    background: linear-gradient(45deg, #fed975 0, #fa7e1e 26%, #d62977 50%, #962fbf 75%, #4f5ad5 100%) !important
+}
+
+
+/*Whatsapp popup CSS*/
+.whatsapp-popup, .wechat-popup {
+    margin: 0;
+    padding: 0;
+    max-width: 320px;
+    width: 320px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    border-radius: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    position: absolute;
+    transition: .5s;
+    -webkit-transition: .5s;
+    animation-delay: -2s;
+    -webkit-animation-delay: -2s;
+    overflow-y: auto;
+    background-color: #e8e4df;
+}
+.whatsapp-popup-header, .wechat-popup-header {
+    background-color: #10c379;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 15px 15px;
+    position: relative;
+}
+.whatsapp-profile {
+    height: 46px;
+    width: 46px;
+    margin-right: 10px;
+}
+.whatsapp-profile img, .wechat-profile img {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+}
+.whatsapp-popup-title-section, .wechat-popup-title-section {
+    flex: 1;
+    margin: 0 15px 0 0;
+    color: #ffffff;
+}
+.whatsapp-popup-title, .wechat-popup-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.whatsapp-popup-sub-title {
+    font-size: 13px;
+}
+.whatsapp-popup-close-btn, .wechat-popup-close-btn {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    fill: #ffffff;
+    cursor: pointer;
+    transform: translate(0, -50%);
+}
+.whatsapp-popup-body {
+    background-color: #e8e4df;
+    max-height: 500px;
+    min-height: 270px;
+    overflow-y: auto;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+.whatsapp-chat {
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 10px 10px 20px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    line-height: 18px;
+    font-size: 14px;
+    position: relative;
+}
+.whatsapp-chat p {
+    margin: 0;
+    line-height: 18px;
+}
+.whatsapp-chat p + p {
+    padding: 5px 0 0;
+    margin: 0;
+}
+.whatsapp-chat::before {
+    content: "";
+    height: 32px;
+    border-left: 11px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 11px solid #ffffff;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+.whatsapp-popup-footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #e8e4df;
+    padding: 15px;
+}
+.whatsapp-chat-input {
+    flex: 1;
+    border: none !important;
+    padding: 0 15px !important;
+    font-size: 14px;
+    outline: none !important;
+    border-radius: 50px !important;
+    height: 40px;
+}
+.whatsapp-chat-input::placeholder {
+    color: #c2c2c2;
+}
+.whatsapp-form-btn {
+    padding: 0 0 0 10px;
+}
+.whatsapp-send-btn {
+    line-height: 18px !important;
+    background: transparent !important;
+    outline: none !important;
+    border: none !important;
+    padding: 10px 8px 10px 12px !important;
+    margin: 0 !important;
+    min-width: 1px !important;
+}
+button.whatsapp-send-btn {
+    width: 40px !important;
+    height: 40px !important;
+    background: #10c379 !important;
+    border-radius: 50%;
+    min-width: 1px;
+    cursor: pointer;
+}
+.whatsapp-send-btn svg {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+.whatsapp-send-btn svg path {
+    fill: #ffffff;
+}
+.list-channel .gsb-social-channel:hover span:not(.channel-bs-icon) {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, .25);
+}
+.view-list .list_view .gsb-social-channel .chat-button-icon.has-image img, .view-grid .grid_view .chat-button-link.has-image img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+.gsb-buttons .gsb-button-list .list_title_container .close-view-btn svg path {
+    stroke: #ffffff;
+}.close-view-btn svg {
+    height: 20px;
+    width: 20px;
+}
+
+.wp-user-profile-img {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: -1px;
+}
+.whatsapp-chat-user-name {
+    color: #1fa855;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 0 5px;
+}
+.whatsapp-chat-time {
+    color: #667781;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 5px 0 0;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+.gsb-button-list:not(.corner_circle_view) .chat-button {
+    transition-delay: 0s !important;
+}
+.gsb-button-list.corner_circle_view .chat-button {
+    z-index: 999;
+}
+.gsb-button-list.corner_circle_view .chat-button:hover {
+    z-index: 9999;
+}
+.whatsapp-popup-close-btn .dashicons, .wechat-popup-close-btn .dashicons {
+    color: #ffffff;
+}
+.gsb-buttons .gsb-button-list .list_title_container .close-view-btn span.dashicons {
+    color: #ffffff;
+}
+.gsb-buttons.single.open-whatsapp-popup .gsb-trigger-whatsapp-popup, .gsb-buttons.single.open-form .gsb-trigger-contact, .gsb-buttons.single.open-wechat-popup .gsb-trigger-wechat-popup {
+    z-index: 1;
+}
+
+.gsb-button-list.menu_view .chat-button {
+    width: 200px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    border-radius: 5px !important;
+}
+.gsb-button-list.menu_view .chat-button a {
+    height: 36px !important;
+    line-height: 28px !important;
+    padding: 0 7px !important;
+    border-radius: 5px !important;
+    width: 200px !important;
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none;
+}
+.gsb-button-list.menu_view .chat-button {
+    margin: 10px 0 0;
+}
+.gsb-button-list.menu_view .chat-button span.chat-button-icon {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    flex: 0 0 24px;
+}
+.gsb-button-list.menu_view .chat-button-icon svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.gsb-buttons.right-side .gsb-button-list.menu_view + .gsb-trigger {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.gsb-buttons.right-side .gsb-button-list.menu_view + .gsb-trigger .gsb-trigger-button {
+    text-align: right;
+}
+.menu-view-title {
+    font-size: 16px;
+}
+.gsb-button-list.menu_view .chat-button a.has-image .chat-button-icon {
+    height: 24px;
+    width: 24px;
+}
+.gsb-button-list.menu_view .chat-button a.has-image .chat-button-icon img {
+    height: 100% !important;
+    width: 100% !important;
+    position: unset;
+}
+.gsb-button-list.corner_circle_view .chat-button a.has-image .chat-button-icon img {
+    height: 100% !important;
+    width: 100% !important;
+}
+.gsb-buttons.open-whatsapp-popup .whatsapp-popup, .gsb-buttons.open-form .scw-contact-form, .gsb-buttons.open-wechat-popup .wechat-popup {
+    z-index: 1211;
+}
+.gsb-buttons .gsb-button-list.menu_view {
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    animation-delay: -2s;
+    -webkit-animation-delay: -2s;
+}
+.gsb-buttons.left-side .gsb-button-list.menu_view {
+    left: 0;
+    right: auto;
+}
+.gsb-buttons p {
+    margin: 0;
+    padding: 0;
+}
+.iti-mobile .iti__country-list {
+    max-height: 100%;
+    width: max-content;
+}
+
+
+
+/* RTL css */
+body.rtl .whatsapp-popup-close-btn, body.rtl .wechat-popup-close-btn {
+    left: 10px;
+    right: auto;
+}
+body.rtl .whatsapp-form-btn {
+    padding: 0 10px 0 0;
+}
+body.rtl .whatsapp-profile {
+    margin-right: 0;
+    margin-left: 10px;
+}
+body.rtl .scw-form-title {
+    text-align: right;
+    padding: 10px 15px 10px 25px;
+}
+body.rtl .scw-form-close {
+    left: 7px;
+    right: auto;
+}
+body.rtl .scw-form-field .iti--allow-dropdown .scw-field-number {
+    padding-right: 50px !important;
+}
+body.rtl .list-channel .list-channel-title {
+    margin-left: 0;
+    margin-right: 10px;
+}
+body.rtl .wp-user-profile-img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+body.rtl .whatsapp-chat {
+    border-top-right-radius: 0;
+    border-top-left-radius: 6px;
+}
+body.rtl .whatsapp-chat::before {
+    border-right: 11px solid transparent;
+    border-left: 0 solid transparent;
+    left: auto;
+    right: -10px;
+}
+body.rtl .gsb-button-list.menu_view .chat-button span.chat-button-icon {
+    margin-left: 5px;
+    margin-right: 0;
+}
+body.rtl .whatsapp-popup-title-section, body.rtl .wechat-popup-title-section {
+    margin: 0 0 0 15px;
+}
+body.rtl .wechat-profile {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+
+
+.wechat-popup {
+    background-color: #ffffff;
+}
+.wechat-popup-body {
+    padding: 15px;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+.wechat-popup-qr-heading {
+    font-size: 15px;
+    color: gray;
+}
+.wechat-popup-qr-img {
+    height: 250px;
+    width: 100%;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.wechat-popup-qr-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wechat-profile {
+    height: 26px;
+    width: 26px;
+    margin-right: 10px;
+}
+.gsb-buttons.single.open-whatsapp-popup .gsb-trigger .chat-button, .gsb-buttons.single.open-form .gsb-trigger .chat-button, .gsb-buttons.single.open-wechat-popup .gsb-trigger .chat-button {
+    visibility: hidden;
+}
+.menu-view-title {
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

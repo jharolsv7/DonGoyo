@@ -19,7 +19,7 @@ fieldset .wc-stripe-elements-field,
 	font-family: inherit;
 	font-size: var(--theme-form-font-size, 16px);
 	color: var(--theme-form-text-initial-color, var(--theme-text-color));
-	padding: var(--has-classic-forms, var(--theme-form-field-padding, 0 12px));
+	padding: var(--has-classic-forms, var(--theme-form-field-padding, 0 15px));
 	border-width: var(--theme-form-field-border-width, 1px);
 	border-style: var(--theme-form-field-border-style, solid);
 	border-color: var(--theme-form-field-border-initial-color);
@@ -42,6 +42,14 @@ fieldset .wc-stripe-elements-field,
 	}
 }
 
+input[type='date'] {
+	min-height: var(--has-height, var(--theme-form-field-height, 40px));
+	
+	&::-webkit-date-and-time-value {
+		text-align: inherit;
+	}
+}
+
 select {
 	padding-inline-end: 25px;
 	background-image: url("data:image/svg+xml,%3Csvg width='21' height='13' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5.379L20.621 2.5 10.5 12.621.379 2.5 2.5.379l8 8z' fill='%234F5D6D' fill-rule='nonzero'/%3E%3C/svg%3E");
@@ -57,5 +65,5 @@ select {
 textarea {
 	line-height: 1.5;
 	resize: vertical;
-	--theme-form-field-padding: 12px;
+	--theme-form-field-padding: 12px 15px;
 }

@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 6.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.48
+Stable tag: 2.0.54
 
 == Description ==
 
@@ -52,6 +52,26 @@ Program. The Patchstack team help validate, triage and handle any security
 vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/blocksy-companion)
 
 == Changelog ==
+2.0.54: 2024-06-17
+- Improvement: General fixes and improvements
+
+2.0.53: 2024-06-07
+- Improvement: General fixes and improvements
+
+2.0.52: 2024-06-06
+- New: Taxonomies query block
+- Improvement: Regenerate `global.css` when copying settings from parent or child theme
+
+2.0.51: 2024-05-30
+- Improvement: Correctly load JS translations for the Blocksy Companion
+
+2.0.50: 2024-05-24
+- Improvement: Ensure required theme version is correctly verified within WP CLI
+- Improvement: Login to WP dashboard through cPanel WP Toolkit doesn't work
+
+2.0.49: 2024-05-23
+- Improvement: General fixes and improvements
+
 2.0.48: 2024-05-16
 - Improvement: Sometimes the demo data cannot be persisted in DB due to some restrictions
 - Fix: Account dropdown - correctly link Dokan Dashboard item

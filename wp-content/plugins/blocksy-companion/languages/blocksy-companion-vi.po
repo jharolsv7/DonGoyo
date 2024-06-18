@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Blocksy Companion Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-08 14:38:48+0000\n"
+"PO-Revision-Date: 2024-06-16 04:14:51+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -241,7 +241,7 @@ msgstr "Chèn một Khối nội dung cụ thể ở bất kỳ đâu trên tran
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:57
 msgid "Widget for filtering the WooCommerce products loop by category, attribute or brand."
-msgstr "Widget để lọc vòng lặp sản phẩm WooCommerce theo danh mục, thuộc tính hoặc thương hiệu."
+msgstr "Tiện ích để lọc vòng lặp sản phẩm WooCommerce theo danh mục, thuộc tính hoặc thương hiệu."
 
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/woocommerce-filters.js:566
 msgid "Shop Filters"
@@ -633,7 +633,7 @@ msgstr "Bạn chưa có sản phẩm nào trong danh sách so sánh."
 
 #: framework/premium/features/premium-header/items/search-input/options.php:807
 msgid "Dropdown Font"
-msgstr "Phông chữ Dropdown"
+msgstr "Phông chữ Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:779
 msgid "Input Border Radius"
@@ -661,7 +661,7 @@ msgstr "Menu 3"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:350
 msgid "Dropdown Arrow"
-msgstr "Mũi tên Dropdown"
+msgstr "Mũi tên Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/divider/options.php:22,
 #: framework/premium/features/premium-header/items/divider/options.php:51,
@@ -725,7 +725,7 @@ msgstr "Lưu trữ kích thước mẫu thẻ"
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:96,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:151
 msgid "Widget Swatch Size"
-msgstr "Kích thước mẫu màu của widget"
+msgstr "Kích thước mẫu màu của tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:33,
 #: framework/premium/extensions/woocommerce-extra/features/swatches/options.php:87,
@@ -1006,7 +1006,7 @@ msgstr "Thanh bên WooCommerce"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:489
 msgid "Widget Area Source"
-msgstr "Nguồn Khu vực Widget"
+msgstr "Nguồn khu vực tiện ích"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/options.php:293,
 #: framework/premium/extensions/woocommerce-extra/features/size-guide/customizer-options.php:100
@@ -1403,7 +1403,7 @@ msgstr "Cập nhật tự động số lượng"
 
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:70
 msgid "Image AffiliateLink"
-msgstr "Liên kết hình ảnh Affiliate"
+msgstr "Li��n kết hình ảnh Affiliate"
 
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:57,
 #: framework/premium/extensions/woocommerce-extra/features/affiliate/options.php:90
@@ -1498,7 +1498,7 @@ msgstr "Cũ nhất trước"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/options.php:11
 msgid "Reviews Order"
-msgstr "Thứ t��� đánh giá"
+msgstr "Thứ tự đánh giá"
 
 #: framework/premium/extensions/woocommerce-extra/features/advanced-reviews/feature.php:649
 msgid "Upload Image (Optional)"
@@ -1799,7 +1799,7 @@ msgstr "Liên kết đến"
 
 #: framework/features/header/items/account/options.php:302
 msgid "Dropdown Items"
-msgstr "Các mục Dropdown"
+msgstr "Các mục Menu thả xuống"
 
 #: framework/features/header/items/account/options.php:291,
 #: framework/premium/extensions/woocommerce-extra/features/quick-view/options.php:32
@@ -2008,7 +2008,7 @@ msgstr "Tiện ích mở rộng này yêu cầu cài đặt và kích hoạt plu
 
 #: framework/premium/extensions/sidebars/extension.php:185
 msgid "Remove Widget Area"
-msgstr "Xóa bỏ khu vực Widget"
+msgstr "Xóa bỏ khu vực tiện ích"
 
 #: framework/premium/extensions/shortcuts/customizer.php:1055
 msgid "Compare Badge Color"
@@ -2052,7 +2052,7 @@ msgstr "Hiển thị nội dung"
 
 #: framework/premium/extensions/mega-menu/options.php:312
 msgid "If you have complex data inside your mega menu you can enable this option in order to load the dropdown content with AJAX and improve the website loading time."
-msgstr "Nếu bạn có dữ liệu phức tạp trong menu mega, bạn có thể bật tùy chọn này để tải nội dung thả xuống bằng AJAX và cải thiện thời gian tải trang web."
+msgstr "Nếu bạn có dữ liệu phức tạp trong menu mở rộng, bạn có thể bật tùy chọn này để tải nội dung thả xuống bằng AJAX và cải thiện thời gian tải trang web."
 
 #: framework/premium/extensions/mega-menu/options.php:309
 msgid "AJAX Content Loading"
@@ -2060,7 +2060,7 @@ msgstr "Tải nội dung AJAX"
 
 #: framework/premium/extensions/mega-menu/options.php:72
 msgid "Dropdown Custom Width"
-msgstr "Chiều rộng tùy chỉnh Dropdown"
+msgstr "Chiều rộng tùy chỉnh Menu thả xuống"
 
 #: framework/premium/extensions/color-mode-switch/extension.php:94
 msgid "Dark Mode Color Palette"
@@ -2284,7 +2284,7 @@ msgstr "Link sản phẩm tiếp thị liên kết"
 
 #: framework/helpers/exts.php:262
 msgid "Categorise products by brands and show their logo in archive or single page so users could discover more about their makers."
-msgstr "Phân loại sản phẩm theo nhãn hiệu và hi���n thị logo của họ trong kho lưu trữ hoặc một trang để người dùng có thể khám phá thêm về nhà sản xuất của họ."
+msgstr "Phân loại sản phẩm theo nhãn hiệu và hiển thị logo của họ trong kho lưu trữ hoặc một trang để người dùng có thể khám phá thêm về nhà sản xuất của họ."
 
 #: framework/helpers/exts.php:261
 #: framework/premium/extensions/woocommerce-extra/static/js/blocks/TaxonomySelector.js:50
@@ -2347,7 +2347,7 @@ msgstr "Một tập hợp các tính năng cho phép bạn dễ dàng tạo danh
 
 #: framework/helpers/exts.php:198
 msgid "Drill down the product list with new filtering widgets, an off canvas area for them and showing the active filters on the page."
-msgstr "Lọc danh sách sản phẩm với các widget lọc mới, một khu vực ngoài khung cho chúng và hiển thị các bộ lọc đang hoạt động trên trang."
+msgstr "Lọc danh sách sản phẩm với các tiện ích lọc mới, một khu vực ngoài khung cho chúng và hiển thị các bộ lọc đang hoạt động trên trang."
 
 #: framework/helpers/exts.php:197
 msgid "Filters"
@@ -2633,17 +2633,17 @@ msgstr "Chọn Content Block"
 #: framework/premium/extensions/code-snippets/extension.php:100,
 #: framework/premium/extensions/code-snippets/extension.php:145
 msgid "Footer scripts"
-msgstr "Footer scripts"
+msgstr "Tệp lệnh chân trang"
 
 #: framework/premium/extensions/code-snippets/extension.php:31,
 #: framework/premium/extensions/code-snippets/extension.php:78,
 #: framework/premium/extensions/code-snippets/extension.php:123
 msgid "Header scripts"
-msgstr "Header scripts"
+msgstr "Tệp lệnh đầu trang"
 
 #: framework/features/header/modal/register.php:62
 msgid "A link to set a new password will be sent to your email address."
-msgstr "M���t liên kết để đặt mật khẩu mới sẽ được gửi đến địa chỉ email của bạn."
+msgstr "Một liên kết để đặt mật khẩu mới sẽ được gửi đến địa chỉ email của bạn."
 
 #: framework/premium/features/content-blocks/admin-ui.php:652
 msgid "Show WooCommerce Hooks"
@@ -2679,15 +2679,15 @@ msgstr "Điều kiện hiển thị Block xu hướng"
 
 #: framework/extensions/trending/customizer.php:306
 msgid "After Header"
-msgstr "Sau Header"
+msgstr "Sau đầu trang"
 
 #: framework/extensions/trending/customizer.php:301
 msgid "After Footer"
-msgstr "Sau Footer"
+msgstr "Sau Chân trang"
 
 #: framework/extensions/trending/customizer.php:296
 msgid "Before Footer"
-msgstr "Trước Footer"
+msgstr "Trước chân trang"
 
 #: framework/extensions/trending/customizer.php:288
 msgid "Display Location"
@@ -2977,7 +2977,7 @@ msgstr "Đóng modal bộ lọc"
 
 #: framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/feature.php:134
 msgid "Add widgets here."
-msgstr "Thêm widget ở đây."
+msgstr "Thêm tiện ích ở đây."
 
 #: framework/premium/extensions/woocommerce-extra/features/product-gallery/feature.php:200
 msgid "Thumbnails Arrows Visibility"
@@ -3079,7 +3079,7 @@ msgstr "Tải lên"
 
 #: framework/premium/features/content-blocks/popups.php:357
 msgid "Close popup"
-msgstr "Tho��t Popup"
+msgstr "Thoát Popup"
 
 #: framework/premium/features/content-blocks/admin-ui.php:355,
 #: framework/premium/features/content-blocks/options/popup.php:82
@@ -3282,7 +3282,7 @@ msgstr "Nhập nội dung"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:168
 msgid "Import widgets"
-msgstr "Nhập widget"
+msgstr "Nhập tiện ích"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/useInstaller.js:158
 msgid "Import options"
@@ -3367,11 +3367,11 @@ msgstr "tải xuống các tùy chọn demo"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:38
 msgid "installing demo widgets"
-msgstr "cài đặt các widget demo"
+msgstr "cài đặt các tiện ích demo"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:34
 msgid "downloading demo widgets"
-msgstr "tải xuống các widget demo"
+msgstr "tải xuống các tiện ích demo"
 
 #: static/js/dashboard/screens/DemoInstall/Installer/messages.js:28
 msgid "activating plugin %s"
@@ -3452,11 +3452,11 @@ msgstr "Đang tải Trang web khởi động..."
 
 #: static/js/options/DisplayCondition.js:23
 msgid "Add one or more conditions to display the transparent header."
-msgstr "Thêm một hoặc nhiều điều kiện để hiển thị header trong suốt."
+msgstr "Thêm một hoặc nhiều điều kiện để hiển thị đầu trang trong suốt."
 
 #: static/js/options/DisplayCondition.js:19
 msgid "Transparent Header Display Conditions"
-msgstr "Điều kiện hiển thị Header trong suốt"
+msgstr "Điều kiện hiển thị Đầu trang trong suốt"
 
 #: static/js/options/CustomizerOptionsManager.js:107
 msgid "Export Customizations"
@@ -3476,7 +3476,7 @@ msgstr "Xuất"
 
 #: static/js/options/CustomizerOptionsManager.js:443
 msgid "Widgets settings"
-msgstr "Cài đặt Widget"
+msgstr "Cài đặt Tiện ích"
 
 #: static/js/options/CustomizerOptionsManager.js:439
 msgid "Customizer settings"
@@ -3610,15 +3610,15 @@ msgstr "Bạn sắp xóa tiêu đề tùy chỉnh, bạn có chắc chắn muố
 
 #: static/js/header/PanelsManager.js:198
 msgid "Remove Header"
-msgstr "Xoá Header"
+msgstr "Xoá đầu trang"
 
 #: static/js/header/PanelsManager.js:174
 msgid "Remove header"
-msgstr "Xoá header"
+msgstr "Xoá đầu trang"
 
 #: static/js/header/EditConditions.js:107
 msgid "Add one or more conditions in order to display your header."
-msgstr "Thêm một hoặc nhiều điều kiện để hiển thị header của bạn."
+msgstr "Thêm một hoặc nhiều điều kiện để hiển thị đầu trang của bạn."
 
 #: static/js/header/EditConditions.js:151
 #: static/js/options/DisplayCondition.js:98
@@ -3738,7 +3738,7 @@ msgstr "Tạo đầu trang mới"
 #: framework/premium/static/js/header/CreateHeader.js:134
 #: static/js/header/PanelsManager.js:58
 msgid "Global Header"
-msgstr "Header toàn cầu"
+msgstr "Đầu trang cho toàn website"
 
 #: framework/premium/static/js/header/CreateHeader.js:117
 msgid "Picker header"
@@ -3887,7 +3887,7 @@ msgstr "Bạn có thể chèn liên kết tới hình ảnh tự lưu trữ ho�
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:494
 msgid "Gutenberg Options Panel Icon URL"
-msgstr "URL biểu tượng bảng điều khiển tùy chọn Gutenberg"
+msgstr "URL biểu tượng bảng điều khiển tùy ch��n Gutenberg"
 
 #: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:485
 msgid "You can insert the link to a self hosted image or upload one. The recommended image size is 18px wide by 18px tall."
@@ -4112,11 +4112,11 @@ msgstr "Khu vực Widget"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:848
 msgid "Dropdown Background"
-msgstr "Nền Dropdown"
+msgstr "Nền Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:817
 msgid "Dropdown Text Color"
-msgstr "Màu văn bản Dropdown"
+msgstr "Màu văn bản Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/search-input/options.php:380,
 #: framework/premium/features/premium-header/items/search-input/options.php:409,
@@ -4159,12 +4159,12 @@ msgstr "Hộp tìm kiếm"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:359
 msgid "Dropdown Top Offset"
-msgstr "Độ lệch trên Dropdown"
+msgstr "Độ lệch trên Menu thả xuống"
 
 #: framework/features/header/items/account/options.php:1858,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:341
 msgid "Dropdown Options"
-msgstr "Tùy chọn Thả xuống"
+msgstr "Tùy chọn Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:112
 msgid "Hide Current Language"
@@ -4193,7 +4193,7 @@ msgstr "Hiển thị"
 #: framework/features/header/items/account/options.php:290,
 #: framework/premium/features/premium-header/items/language-switcher/options.php:37
 msgid "Dropdown"
-msgstr "Dropdown"
+msgstr "Menu thả xuống"
 
 #: framework/premium/features/premium-header/items/language-switcher/options.php:17
 msgid "Top Level Options"
@@ -6046,7 +6046,7 @@ msgstr "Cài đặt cột"
 #: framework/premium/extensions/mega-menu/options.php:714,
 #: framework/premium/features/premium-header/items/search-input/options.php:870
 msgid "Dropdown Shadow"
-msgstr "Bóng Dropdown"
+msgstr "Bóng Menu thả xuống"
 
 #: framework/premium/extensions/mega-menu/options.php:699
 msgid "Columns Divider"
@@ -6202,7 +6202,7 @@ msgstr "Chiều rộng nội dung"
 
 #: framework/premium/extensions/mega-menu/options.php:28
 msgid "Dropdown Width"
-msgstr "Chiều rộng Dropdown"
+msgstr "Chiều rộng Menu thả xuống"
 
 #: framework/premium/extensions/mega-menu/options.php:16,
 #: framework/premium/extensions/mega-menu/options.php:581
@@ -6384,21 +6384,21 @@ msgstr "Icon"
 
 #: framework/premium/features/premium-header.php:202
 msgid "Header Widget Area "
-msgstr "Khu vực Widget Header"
+msgstr "Khu vực tiện ích đầu trang "
 
 #: framework/premium/features/premium-header.php:57
 msgid "Header Menu 3"
-msgstr "Header Menu 3"
+msgstr "Menu đầu trang 3"
 
 #: framework/premium/features/premium-footer.php:29,
 #: framework/premium/features/premium-footer/items/menu-secondary/config.php:4
 msgid "Footer Menu 2"
-msgstr "Footer Menu 2"
+msgstr "Menu chân trang 2"
 
 #: framework/premium/features/premium-footer.php:14,
 #: framework/premium/features/premium-footer.php:28
 msgid "Footer Menu 1"
-msgstr "Footer Menu 1"
+msgstr "Menu chân trang 1"
 
 #: framework/premium/features/content-blocks.php:288,
 #: framework/premium/extensions/woocommerce-extra/features/custom-tabs/feature.php:111,

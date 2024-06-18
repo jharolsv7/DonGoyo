@@ -1,0 +1,381 @@
+body.rtl .gp-box, body.rtl .widget-settings {
+    direction: rtl;
+}
+body.rtl .dashboard-header .dashboard-header-right {
+    text-align: left;
+}
+body.rtl .dashboard-table .button-actions ul li a svg {
+    float: right;
+}
+body.rtl .gp-modal .gp-modal-container .gp-modal-content .gp-modal-close-btn {
+    left: 10px;
+    right: auto;
+}
+body.rtl .gsb-free-settings {
+    align-items: flex-end;
+}
+body.rtl .gsb-free-settings .gsb-title {
+    padding-right: 10px;
+}
+body.rtl .load-more-setting a {
+    margin: 0 15px 15px 0;
+}
+body.rtl .show-wt-popup-box {
+    margin: 0 15px 15px 0;
+}
+body.rtl .whatsapp-popup-close-btn, body.rtl .wechat-popup-close-btn {
+    left: 7px;
+    right: auto;
+}
+body.rtl .load-more-setting a svg {
+    margin: 0 0 0 5px;
+}
+body.rtl .checkbox-custom label {
+    padding-right: 28px;
+}
+body.rtl .toggle-field-title .toggle-field-setting {
+    margin-right: 10px;
+}
+body.rtl .wp-picker-input-wrap {
+    left: 44px;
+}
+body.rtl .gp-form-field .gp-form-input.add-prefix-text:after {
+    left: 3px;
+    right: auto;
+}
+body.rtl .calender-input::after {
+    left: 8px;
+    right: auto;
+}
+body.rtl .scw-form-title {
+    text-align: right;
+}
+body.rtl .scw-form-close {
+    left: 5px;
+    right: auto;
+}
+body.rtl .scw-mailchimp-auth-input .dashboard-switch label:after {
+    right: 55px;
+    left: auto;
+}
+body.rtl .scw-mailchimp-auth-input .dashboard-switch label:before {
+    right: 55px;
+    left: auto;
+}
+body.rtl .scw-integration-back-btn svg {
+    padding-left: 5px;
+}
+body.rtl .scw-mailchimp-header-img {
+    margin-left: 10px;
+}
+body.rtl .scw-mailchimp-first-section ul {
+    margin: 0 25px 0 0;
+}
+body.rtl .contact-form-field-select span i {
+    margin-left: 10px;
+}
+body.rtl .image-radio-buttons .image-radio-button + .image-radio-button {
+    margin-right: 10px;
+}
+body.rtl input[type=email], body.rtl input[type=url] {
+    direction: rtl;
+}
+body.rtl .SumoSelect .select-all>span, body.rtl .SumoSelect>.optWrapper.multiple>.options li.opt span {
+    margin-left: -5px;
+    right: 0;
+}
+body.rtl .SumoSelect>.optWrapper.multiple>.options li.opt {
+    padding-right: 35px;
+}
+body.rtl .SumoSelect .select-all {
+    padding: 8px 35px 3px 0;
+}
+body.rtl .gsb-free-settings .gsb-more-settings a {
+    -webkit-border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+}
+body.rtl .gsb-free-settings .gsb-more-settings {
+    left: 0;
+    right: auto;
+}
+body.rtl .remove-channel-img span.dashicons {
+    top: -2px;
+    left: 2px;
+}
+body.rtl .dashboard-table .button-actions {
+    left: 15px;
+    right: auto;
+}
+body.rtl .dashboard-table .button-actions:before {
+    left: 6px;
+    right: auto;
+}
+body.rtl .widget-settings .dashboard-switch label {
+    padding-right: 60px;
+}
+body.rtl .widget-settings .dashboard-switch.on-off input:checked + label:before {
+    text-align: right;
+    padding: 0 10px 0 0px;
+}
+body.rtl .widget-settings .dashboard-switch.on-off label:before {
+    text-align: left;
+    padding: 0 0 0 8px;
+}
+body.rtl .widget-settings .dashboard-switch label:before {
+    right: 0;
+    left: auto;
+}
+body.rtl .widget-settings .dashboard-switch.on-off input:checked + label:after {
+    right: 34px;
+    left: auto;
+}
+body.rtl .widget-settings .dashboard-switch input:checked + label:after {
+    right: 20px;
+    left: auto;
+}
+body.rtl .widget-settings .dashboard-switch label:after {
+    right: 4px;
+    left: auto;
+}
+body.rtl .widget-settings .gp-form-field .gp-form-label label.trigger-label {
+    padding-right: 48px;
+}
+body.rtl .gp-form-field .gp-form-label label.text-right {
+    text-align: right !important;
+}
+body.rtl .google-analytics .dashboard-switch label, body.rtl .activate-general-setting .dashboard-switch label {
+    padding-left: 0;
+}
+body.rtl a.upgrade-link.in-block, body.rtl .google-analytics a.upgrade-link.in-block, body.rtl .activate-general-setting a.upgrade-link.in-block {
+    margin: 0 10px 0 0;
+}
+body.rtl .add-new-custom-field .upgrade-link.in-block {
+    margin: 10px 10px 0 0;
+}
+body.rtl .gp-form-field .gp-form-input a.upgrade-link .dashicons {
+    margin-right: 2px;
+    margin-left: 0;
+}
+body.rtl a.upgrade-link.in-block .dashicons {
+    margin-left: 0;
+}
+body.rtl .back-button {
+    margin-left: 6px;
+}
+body.rtl .widget-setting {
+    border-right: transparent;
+    border-left: 1px solid #EBE9FE;
+}
+body.rtl .toggle-field-title .dashboard-switch label {
+    padding-right: 0;
+}
+body.rtl .add-customfield-dropdown-option {
+    margin-right: 15px;
+}
+body.rtl .contact-form-dropdown-option .option-value-field .delete-dropdown-option {
+    margin-left: 0;
+}
+body.rtl .dropdown-setting-label a.contact-form-dropdown-popup svg {
+    padding-left: 5px;
+    padding-right: 0;
+}
+body.rtl .date-filter .gp-form-field {
+    margin-left: 5px;
+}
+body.rtl .filter-inputs button[type='submit'] {
+    margin-right: 5px;
+    margin-left: 0;
+}
+body.rtl .dashboard-table .action-box .dropdown-button {
+    border-radius: 4px 0 0 4px;
+    border-right: solid 1px #C7D7FE;
+    border-left: transparent;
+}
+body.rtl .dashboard-table .action-box a {
+    border-radius: 0 4px 4px 0;
+}
+body.rtl .gp-radio-buttons .gp-radio-button + .gp-radio-button {
+    margin-right: 4px;
+    margin-left: 0;
+}
+body.rtl .input-settings .input-setting.for-mobile-desktop .dashboard-switch {
+    display: flex;
+}
+body.rtl .sticky-help-button {
+    left: 40px;
+    right: auto;
+}
+body.rtl .sticky-help-form {
+    left: 40px;
+    right: auto;
+}
+body.rtl .sticky-form-title {
+    padding: 10px;
+}
+body.rtl a.hide-help-form {
+    float: left;
+}
+body.rtl .wp-user-profile-img {
+    margin-left: 12px;
+    margin-right: 0;
+}
+body.rtl .whatsapp-chat::before {
+    border-right: 11px solid transparent;
+    border-left: 0 solid transparent;
+    right: -10px;
+    left: auto;
+}
+body.rtl .whatsapp-chat {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 0;
+}
+body.rtl .sticky-preview-button {
+    left: -26px;
+    top: 50%;
+    transform: rotate(90deg) translateX(-50%);
+    right: auto;
+}
+body.rtl .default-state .dashboard-switch label {
+    padding-left: 0;
+}
+body.rtl .button-list.menu_view .channel-btn span.ginger-button-icon {
+    margin-left: 7px;
+    margin-right: 0;
+}
+body.rtl .ginger-sticky-buttons.horizontal-menu:not(.one-channel) .sticky-button-list {
+    flex-direction: row-reverse;
+}
+body.rtl .ginger-sticky-buttons.horizontal-menu.left-position:not(.one-channel) .button-list {
+    flex-direction: row;
+}
+body.rtl .ginger-sticky-buttons.horizontal-menu.right-position:not(.one-channel) .button-list {
+    flex-direction: row-reverse;
+}
+body.rtl .view-list .list_view .gsb-social-channel .list-channel-title {
+    margin-right: 10px;
+    margin-left: 0;
+}
+body.rtl .ginger-sticky-buttons.left-position .button-list.menu_view + .main-button {
+    float: left;
+}
+body.rtl .custom-position-box .gp-form-field {
+    padding-left: 10px;
+}
+body.rtl .custom-position-box .gp-form-field .gp-form-input .SumoSelect > .CaptionCont {
+    height: 42px;
+}
+@media only screen and (max-width: 432px) {
+    body.rtl .contact-load-more-setting {
+        margin-right: 0;
+    }
+    body.rtl .load-more-setting a {
+        margin: 0 15px 15px 0;
+    }
+}
+body.rtl .ginger-box * {
+    direction: rtl;
+}
+body.rtl .table-body ul li .dashicons {
+    margin: 0;
+}
+body.rtl .price-switch .text-right {
+    text-align: left !important;
+}
+@media only screen and (max-width: 522px) {
+    body.rtl .show-wt-popup-box {
+        margin: 0 15px 15px 0 !important;
+    }
+}
+body.rtl .gsb-free-settings .gsb-input-icon {
+     padding-right: 0;
+}
+body.rtl .contact-load-more-setting {
+     margin-right: 0;
+}
+@media only screen and (max-width: 522px) {
+    body.rtl .gsb-free-settings .gsb-input-value {
+        padding-right: 0;
+    }
+    body.rtl .gsb-free-settings .gsb-title {
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 421px) {
+    body.rtl a.add-custom-field-btn {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+body.rtl .disabled-field.gp-form-field .gp-form-input a.upgrade-link {
+    right: 50px;
+    left: auto;
+}
+body.rtl .main-save-btn .btn-text {
+    border-right: transparent;
+    border-left: 1px solid #6d65f5;
+}
+body.rtl .input-settings .input-setting + .input-setting {
+    border-right: solid 1px #EBE9FE;
+    border-left: transparent;
+}
+body.rtl .input-setting.for-mobile-desktop {
+    display: flex;
+    align-items: center;
+}
+body.rtl .input-setting.for-mobile-desktop .dashboard-switch label {
+    padding-left: 0;
+}
+@media only screen and (min-width: 1331px) and (max-width: 1508px) {
+    body.rtl .input-setting.for-mobile-desktop {
+        display: block;
+    }
+}
+@media only screen and (min-width: 783px) and (max-width: 1070px) {
+    body.rtl .input-setting.for-mobile-desktop {
+        display: block;
+    }
+}
+@media only screen and (min-width: 609px) and (max-width: 677px) {
+    body.rtl .input-setting.for-mobile-desktop {
+        display: block;
+    }
+}
+@media only screen and (max-width: 608px) {
+    body.rtl .input-settings .input-setting + .input-setting {
+        border-right: transparent;
+    }
+    body.rtl .input-setting.for-mobile-desktop {
+        justify-content: center;
+    }
+    body.rtl .device-option-responsive .dashboard-switch + .dashboard-switch {
+        margin-top: 0;
+    }
+}
+body.rtl .remove-whatsapp-profile, body.rtl .remove-whatsapp-user-profile {
+    margin-left: 0;
+    margin-right: 5px;
+}
+body.rtl .tooltip-setting .gp-form-field {
+    margin-left: 15px;
+}
+body.rtl .wechat-qr-code-img-box .wechat-qr-code-img {
+    margin-left: 10px;
+}
+body.rtl .search-channel-box::after {
+    left: 8px;
+    right: auto;
+}
+body.rtl .whatsapp-form-btn {
+    padding: 5px 10px 5px 0;
+}
+body.rtl .wechat-profile {
+    margin-right: 0;
+    margin-left: 5px;
+}
+body.rtl .whatsapp-popup-title-section, body.rtl .wechat-popup-title-section {
+    margin: 0 0 0 15px;
+}

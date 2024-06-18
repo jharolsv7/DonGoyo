@@ -82,6 +82,11 @@ class CustomPostTypes {
 				'pafe-form-booking',
 				'pafe-fonts',
 
+				// BeRocket
+				'br_labels',
+				'br_product_filter',
+				'br_filters_group',
+
 				// give
 				'give_forms',
 
@@ -141,7 +146,6 @@ class CustomPostTypes {
 				'atbdp_orders',
 				'at_biz_dir',
 				'gspbstylebook',
-				'br_labels',
 				'testimonial',
 				'frm_display',
 				'e-landing-page',
@@ -234,6 +238,42 @@ class CustomPostTypes {
 		}
 
 		return null;
+	}
+
+	public function get_all($args = []) {
+		$args = wp_parse_args($args, [
+			'exclude_built_in' => false,
+			'exclude_woo' => false
+		]);
+
+		$to_exclude = [
+			'attachment',
+			'ct_content_block'
+
+			// documentation for now will not be excluded.
+			// But we might want to exclude it again, in case there will be
+			// some issues with it.
+			// 'documentation',
+		];
+
+		if ($args['exclude_built_in']) {
+			$to_exclude[] = 'post';
+			$to_exclude[] = 'page';
+		}
+
+		if ($args['exclude_woo']) {
+			$to_exclude[] = 'product';
+		}
+
+		$custom_post_types = array_values(array_diff(
+			get_post_types(['public' => true]),
+			$to_exclude
+		));
+
+		return apply_filters(
+			'blocksy:custom_post_types:all_post_types',
+			$custom_post_types
+		);
 	}
 }
 

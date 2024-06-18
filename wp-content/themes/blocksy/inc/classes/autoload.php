@@ -38,6 +38,7 @@ class ThemeAutoloader {
 			'DbVersioning\\V2034' => 'inc/classes/db-versioning/v2-0-34.php',
 			'DbVersioning\\V2036' => 'inc/classes/db-versioning/v2-0-36.php',
 			'DbVersioning\\V2038' => 'inc/classes/db-versioning/v2-0-38.php',
+			'DbVersioning\\V2053' => 'inc/classes/db-versioning/v2-0-53.php',
 
 			'DbVersioning\\DefaultValuesCleaner' => 'inc/classes/db-versioning/utils/db-default-values-cleaner.php',
 
@@ -60,6 +61,7 @@ class ThemeAutoloader {
 
 			'Blocks' => 'inc/components/blocks/blocks.php',
 			'GutenbergBlock' => 'inc/components/blocks/gutenberg-block.php',
+
 			'LegacyWidgetsTransformer' => 'inc/components/blocks/legacy-widgets-transformer.php',
 			'LegacyWidgetsPostsTransformer' => 'inc/components/blocks/legacy/legacy-posts-transformer.php',
 			'LegacyWidgetsAboutMeTransformer' => 'inc/components/blocks/legacy/legacy-about-me-transformer.php',

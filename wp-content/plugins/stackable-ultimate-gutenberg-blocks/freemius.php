@@ -75,7 +75,7 @@ if ( !function_exists( 'sugb_fs' ) ) {
     sugb_fs()->add_filter(
         'show_admin_notice',
         function ( $show, $message ) {
-            if ( in_array( $message['id'], array('license_activated', 'premium_activated', 'connect_account') ) ) {
+            if ( $message['id'] === 'license_activated' || $message['id'] === 'premium_activated' || $message['id'] === 'connect_account' ) {
                 return false;
             }
             return $show;

@@ -1,0 +1,96 @@
+.ginger-popup-form-overlay {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 10001;
+    background: rgba(0, 0, 0, .65)
+}
+
+.ginger-deactivate-popup {
+    display: none
+}
+
+.ginger-popup-form {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    right: 0;
+    margin: 0 auto;
+    min-height: 100px;
+    width: 540px;
+    z-index: 10002;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background: #fff;
+    border-radius: 2px
+}
+
+.gp-popup-form-header {
+    padding: 18px 15px;
+    font-weight: 700;
+    font-size: 16px;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    text-transform: uppercase
+}
+
+.gp-popup-form-body {
+    padding: 18px 15px 5px;
+    text-align: left;
+    background: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1)
+}
+
+.gp-popup-form-footer {
+    padding: 18px 15px
+}
+
+.gp-popup-message {
+    font-weight: 700;
+    font-size: 15px;
+    color: #495157;
+    line-height: 1.4;
+    padding: 0 0 18px
+}
+
+.gp-popup-form-control {
+    padding: 0 0 15px
+}
+
+.gp-popup-form-control label {
+    display: block;
+    padding: 0 0 4px
+}
+
+.gp-popup-form-control input[type=email], .gp-popup-form-control textarea {
+    width: 100%
+}
+
+.gp-popup-action-buttons {
+    float: right
+}
+
+input.button.gp-skip-button {
+    border: none;
+    background: 0 0
+}
+
+.gp-popup-loader {
+    display: none;
+    vertical-align: middle;
+    padding: 5px 0 0
+}
+
+.gp-popup-loader.active {
+    display: inline-block
+}
+
+.gp-popup-form-control input[type=email].input-error, .gp-popup-form-control textarea.input-error {
+    border-color: #dc3232
+}

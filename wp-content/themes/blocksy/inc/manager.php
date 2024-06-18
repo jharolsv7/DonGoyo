@@ -75,21 +75,6 @@ class Blocksy_Manager {
 
 		new \Blocksy\Blocks();
 
-		register_block_pattern_category(
-			'blocksy',
-			[
-				'label' => _x(
-					'Blocksy',
-					'Block pattern category',
-					'blocksy'
-				),
-				'description' => __(
-					'Patterns that contain buttons and call to actions.',
-					'blocksy'
-				),
-			]
-		);
-
 		add_action('customize_save_after', function () {
 			$i18n_manager = new Blocksy_Translations_Manager();
 			$i18n_manager->register_wpml_translation_keys();
@@ -243,6 +228,7 @@ class Blocksy_Manager {
 			'show_more_text' => __('Show more', 'blocksy'),
 			'more_text' => __('More', 'blocksy'),
 			'search_live_results' => __('Search results', 'blocksy'),
+			'search_live_no_results' => __('No results', 'blocksy'),
 
 			'search_live_no_result' => __('No results', 'blocksy'),
 			'search_live_one_result' => _n(
